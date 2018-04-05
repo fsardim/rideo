@@ -1,5 +1,7 @@
 // Styling for the call to action section
-
+.textoCta{
+    color: white;
+}
 
 
 
@@ -8,7 +10,7 @@ section.cta {
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url('../img/farolVerde.jpg');
+    background-image: url('../img/farolVerde2.jpg');
     background-position: center;
     @include background-cover;
     .headingCta{
