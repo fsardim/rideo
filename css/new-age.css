@@ -57,7 +57,8 @@ section h2 {
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
-  background-color: white;
+  background-color: #64136e;
+  opacity: 0.85;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
@@ -78,13 +79,16 @@ section h2 {
 }
 
 #mainNav .navbar-toggler {
-  font-size: 12px;
+  font-size: 20px;
   padding: 8px 10px;
-  color: #222222;
+  color: #92d14f;
+  border-color: #92d14f;
 }
 
 #mainNav .navbar-nav > li > a {
-  font-size: 11px;
+  font-size: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -101,7 +105,7 @@ section h2 {
 
 #mainNav .navbar-nav > li > a,
 #mainNav .navbar-nav > li > a:focus {
-  color: #222222;
+  color: #92d14f;
 }
 
 #mainNav .navbar-nav > li > a:hover,
@@ -130,7 +134,8 @@ section h2 {
   }
   #mainNav.navbar-shrink {
     border-color: rgba(34, 34, 34, 0.1);
-    background-color: white;
+    background-color: #64136e;
+    opacity: 0.9;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #222222;
@@ -146,6 +151,10 @@ section h2 {
   #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
     color: #84f063;
   }
+}
+
+.logoRideo {
+  width: 350px;
 }
 
 .col1 {
