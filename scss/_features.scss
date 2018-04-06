@@ -1,5 +1,16 @@
 // Styling for the features section
 section.features {
+    margin-top: 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .colPC{
+        @media(min-width: 992px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+    }
 
     .section-heading {
         margin-bottom: 0px;
