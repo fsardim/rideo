@@ -1,6 +1,14 @@
 // Styling for the call to action section
 .textoCta{
     color: white;
+    padding-left: 100px;
+}
+
+.form-control{
+    opacity: 0.7;
+    background-color: white;
+    color: black;
+    max-width: 500px;
 }
 
 
@@ -10,7 +18,8 @@ section.cta {
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url('../img/farolVerde2.jpg');
+    background-image: url('../img/farolVerde4.jpg');
+    // filter:blur(1px);
     background-position: center;
     @include background-cover;
     .headingCta{
