@@ -1,7 +1,24 @@
 // Styling for the call to action section
 .textoCta{
     color: white;
-    padding-left: 100px;
+    padding-left: 20px;
+    text-align: center;
+    
+    @media (min-width: 768px) {
+        margin-top: 20px;
+        padding-left: 100px;
+        font-size: 38px;
+        text-align: left;
+    }
+}
+
+.nomes{
+    margin-bottom: 0px;
+    color: #92d14f;
+}
+
+.text-muted{
+    margin-bottom: 14px;
 }
 
 .form-control{
@@ -9,8 +26,36 @@
     background-color: white;
     color: black;
     max-width: 500px;
+    
 }
 
+
+.formContato{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    opacity: 0.95;
+    max-width: 330px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    @media (min-width: 768px) {
+        margin-left: 150px;
+        max-width: 450px;
+    }
+    .nome{
+        margin-top: 10px;
+    }
+
+    .btn-outline{
+        background-color: green;
+        margin-left: 25%;
+        margin-bottom: 20px;
+        font-size: 12px;
+        @media (min-width: 768px) {
+            margin-left: 60%;
+        }
+    }
+}
 
 
 section.cta {
@@ -24,6 +69,7 @@ section.cta {
     @include background-cover;
     .headingCta{
         // position: inherit;
+        margin-top: 15px;
         color: rgb(252, 252, 252);
         z-index: 3;
     }

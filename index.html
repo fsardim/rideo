@@ -51,10 +51,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#download">
+            <!-- <a class="nav-link js-scroll-trigger" href="#download">
               <i class="fas fa-sign-in-alt"></i>
               Entrar
-            </a>
+            </a> -->
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#features">
@@ -82,10 +82,12 @@
           <div class="header-content mx-auto">
             <img class="logoRideo" src="img/logoBolaVerde.png" alt="First slide">
             <h2 class="mb-5">Conheça a nova plataforma de caronas inteligentes para sua comunidade!</h2>
-            <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger acessar">
+            <!-- <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger acessar">
               <i class="fas fa-sign-in-alt"></i>
               Entrar
-            </a>
+            </a> -->
+            <br>
+            <br>
             <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">
 
               Quero na minha
@@ -257,32 +259,34 @@
     </div>
 
     <div class="row">
-      <h3 class="col-lg-5 textoCta">Quer o Ride'O no seu trabalho, universidade, coworking ou condomínio ?<br>
-        <br>Deixe seu contato conosco!</h4>
+      <h3 class="col-lg-5 textoCta">Quer o Ride'O no seu trabalho, universidade, coworking ou condomínio ?
+        <br>
+        <br>Deixe seu contato conosco!</h3>
 
-        <form method="POST" action="https://formspree.io/figueira.91@gmail.com" class="col-lg-7">
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Nome</label>
-            <input type="text" name="name" class="form-control" id="exampleFormControlInput1">
-          </div>
+      <form name="form1" method="POST" action="https://formspree.io/figueira.91@gmail.com" class="col-lg-7 formContato">
+        <input type="hidden" name="_language" value="pt-BR" />
+        <div class="form-group">
+          <label class="nome" for="exampleFormControlInput1">Nome</label>
+          <input type="text" name="name" class="form-control" id="exampleFormControlInput1">
+        </div>
 
-          <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email</label>
+          <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Ex: nome@dominio.com.br">
+        </div>
 
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Example textarea</label>
-            <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Mensagem</label>
+          <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Deixe aqui seu recado! Seu contato é muito importante pra nós ;)"></textarea>
+        </div>
 
-          <a href="" class="btn btn-outline btn-xl js-scroll-trigger" value="submit" type="submit">
-            <button value="submit" type="submit" >ok</button>
 
-              Quero na minha
-              <br> Comunidade!
-            </a>
-        </form>
+        <button value="submit" type="submit" class="btn btn-outline btn-xl" onclick="return validar()">
+          <i class="far fa-envelope"></i>
+          Enviar</button>
+
+
+      </form>
 
 
 
@@ -325,7 +329,7 @@
 
       <div class="container">
         <div class="section-heading text-center">
-          <h2>Quem somos?</h2>
+          <h2 class="nomes">Quem somos?</h2>
           <p class="text-muted">Toda equipe por trás dessa idéia</p>
           <hr>
         </div>
@@ -335,25 +339,31 @@
               <div class="row">
                 <div class="col-lg-4">
                   <div class="feature-item">
-                    <img class="fotoPerfil" src="img/perfilLucas.jpg">
-                    <h3>Lucas Figueira</h3>
-                    <p class="text-muted">Produto, UX, Marketing e Comercial</p>
+                    <a href="https://www.linkedin.com/in/lucasfigueira/" target="_blank">
+                      <img class="fotoPerfil" src="img/perfilLucas.jpg">
+                    </a>
+                    <h3 class="nomes">Lucas Figueira</h3>
+                    <p class="text-muted">Front End e UX</p>
                   </div>
                 </div>
                 <div class="col-lg-4">
                   <div class="feature-item">
-                    <img class="fotoPerfil" src="img/perfilBlanes.jpg">
-                    <h3>Felipe Blanes</h3>
-                    <p class="text-muted">Financeiro, Métricas e Indicadores e Relacionamento com investidor</p>
+                    <a href="https://www.linkedin.com/in/felipeblanes" target="_blank">
+                      <img class="fotoPerfil" src="img/perfilBlanes.jpg">
+                    </a>
+                    <h3 class="nomes">Felipe Blanes</h3>
+                    <p class="text-muted">Front End e Back End</p>
                   </div>
                 </div>
 
 
                 <div class="col-lg-4">
                   <div class="feature-item">
-                    <img class="fotoPerfil" src="img/perfilSardim.jpg">
-                    <h3>Felipe Sardim</h3>
-                    <p class="text-muted">TI (arquitetura, engenharia de sistemas, operação de TI), SAC - dúvidas e bugs</p>
+                    <a href="https://www.linkedin.com/in/felipesardim" target="_blank">
+                      <img class="fotoPerfil" src="img/perfilSardim.jpg">
+                    </a>
+                    <h3 class="nomes">Felipe Sardim</h3>
+                    <p class="text-muted">Front End e Back End</p>
                   </div>
                 </div>
 
@@ -367,7 +377,7 @@
       <br>
       <p>&copy; Ride'O 2018. Todos os direitos reservados.</p>
 
-      <ul class="list-inline">
+      <!-- <ul class="list-inline">
         <li class="list-inline-item">
           <a href="#">Contato</a>
         </li>
@@ -377,7 +387,7 @@
         <li class="list-inline-item">
           <a href="#">FAQ</a>
         </li>
-      </ul>
+      </ul> -->
 
     </div>
   </footer>

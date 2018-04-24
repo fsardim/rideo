@@ -153,6 +153,10 @@ section h2 {
   }
 }
 
+.btn-outline {
+  background-color: #48da74;
+}
+
 .logoRideo {
   width: 250px;
 }
@@ -270,6 +274,10 @@ section.download .badges .badge-link img {
   margin-bottom: 10px;
 }
 
+.col-lg-12 {
+  text-align: center;
+}
+
 section.features {
   margin-top: 0px;
   padding-top: 60px;
@@ -317,13 +325,38 @@ section.features .feature-item {
   text-align: center;
 }
 
+@media (min-device-width: 768px) {
+  section.features .feature-item {
+    margin-left: 25%;
+  }
+}
+
 section.features .feature-item h3 {
   font-size: 30px;
 }
 
 .textoCta {
   color: white;
-  padding-left: 100px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .textoCta {
+    margin-top: 20px;
+    padding-left: 100px;
+    font-size: 38px;
+    text-align: left;
+  }
+}
+
+.nomes {
+  margin-bottom: 0px;
+  color: #92d14f;
+}
+
+.text-muted {
+  margin-bottom: 14px;
 }
 
 .form-control {
@@ -331,6 +364,40 @@ section.features .feature-item h3 {
   background-color: white;
   color: black;
   max-width: 500px;
+}
+
+.formContato {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  opacity: 0.95;
+  max-width: 330px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .formContato {
+    margin-left: 150px;
+    max-width: 450px;
+  }
+}
+
+.formContato .nome {
+  margin-top: 10px;
+}
+
+.formContato .btn-outline {
+  background-color: green;
+  margin-left: 25%;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .formContato .btn-outline {
+    margin-left: 60%;
+  }
 }
 
 section.cta {
@@ -347,6 +414,7 @@ section.cta {
 }
 
 section.cta .headingCta {
+  margin-top: 15px;
   color: #fcfcfc;
   z-index: 3;
 }

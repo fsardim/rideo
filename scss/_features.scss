@@ -5,11 +5,18 @@
     margin-bottom: 10px;
 }
 
+.col-lg-12{
+    text-align: center;
+
+}
+
 
 section.features {
     margin-top: 0px;
     padding-top: 60px;
     padding-bottom: 60px;
+    
+    
 
     .colPC{
         @media(min-width: 992px) {
@@ -45,6 +52,9 @@ section.features {
         padding-top: 20px;
         padding-bottom: 0px;
         text-align: center;
+        @media (min-device-width : 768px){
+            margin-left: 25%;
+        }
         h3 {
             font-size: 30px;
         }

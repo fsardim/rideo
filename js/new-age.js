@@ -1,3 +1,35 @@
+function validar(){
+var name = form1.name.value;
+var email = form1.email.value;
+var message = form1.message.value;
+
+if (name == "") {
+  }
+  alert('Preencha o campo com seu nome');
+  form1.nome.focus();
+  return false;
+
+  if (email == "") {
+  }
+  alert('Preencha seu email');
+  form1.nome.focus();
+  return false;
+
+  if (message == "") {
+  }
+  alert('Deixe uma mensagem');
+  form1.nome.focus();
+  return false;
+
+
+
+}
+
+
+
+
+
+
 (function($) {
   "use strict"; // Start of use strict
 
