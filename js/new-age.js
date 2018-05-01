@@ -1,40 +1,33 @@
-function validar(){
-var name = form1.name.value;
-var email = form1.email.value;
-var message = form1.message.value;
+function validar() {
+  const name = form1.name.value;
+  const email = form1.email.value;
+  const message = form1.message.value;
 
-if (name == "") {
+  if (name === "") {
+    alert('Preencha o campo com seu nome');
+    form1.nome.focus();
+    return false;
   }
-  alert('Preencha o campo com seu nome');
-  form1.nome.focus();
-  return false;
 
-  if (email == "") {
+  if (email === "") {
+    alert('Preencha seu e-mail');
+    form1.nome.focus();
+    return false;
   }
-  alert('Preencha seu email');
-  form1.nome.focus();
-  return false;
 
-  if (message == "") {
+  if (message === "") {
+    alert('Deixe uma mensagem');
+    form1.nome.focus();
+    return false;
   }
-  alert('Deixe uma mensagem');
-  form1.nome.focus();
-  return false;
-
-
 
 }
 
-
-
-
-
-
-(function($) {
+(function ($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -48,7 +41,7 @@ if (name == "") {
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
+  $('.js-scroll-trigger').click(function () {
     $('.navbar-collapse').collapse('hide');
   });
 
@@ -59,7 +52,7 @@ if (name == "") {
   });
 
   // Collapse Navbar
-  var navbarCollapse = function() {
+  var navbarCollapse = function () {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
