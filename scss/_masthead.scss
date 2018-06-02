@@ -5,6 +5,7 @@
 
 .logoRideo{
     width: 250px;
+    margin-bottom: 20px;
 }
 
 
@@ -54,8 +55,13 @@
     }
 
     @media (min-width: 992px) {
-        width: 542px;
-        height: 305px;
+        width: 356px;
+        height: 200px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 474px;
+        height: 266px;
     }
 }
 

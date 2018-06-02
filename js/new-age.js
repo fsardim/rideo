@@ -1,27 +1,27 @@
-function validar() {
-  const name = form1.name.value;
-  const email = form1.email.value;
-  const message = form1.message.value;
+// function validar() {
+//   const name = form1.name.value;
+//   const email = form1.email.value;
+//   const message = form1.message.value;
 
-  if (name === "") {
-    alert('Preencha o campo com seu nome');
-    form1.nome.focus();
-    return false;
-  }
+//   if (name === "") {
+//     alert('Preencha o campo com seu nome');
+//     form1.nome.focus();
+//     return false;
+//   }
 
-  if (email === "") {
-    alert('Preencha seu e-mail');
-    form1.nome.focus();
-    return false;
-  }
+//   if (email === "") {
+//     alert('Preencha seu e-mail');
+//     form1.nome.focus();
+//     return false;
+//   }
 
-  if (message === "") {
-    alert('Deixe uma mensagem');
-    form1.nome.focus();
-    return false;
-  }
+//   if (message === "") {
+//     alert('Deixe uma mensagem');
+//     form1.nome.focus();
+//     return false;
+//   }
 
-}
+// }
 
 (function ($) {
   "use strict"; // Start of use strict
