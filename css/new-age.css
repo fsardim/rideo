@@ -551,6 +551,10 @@ section.contact ul.list-social li.social-google-plus a:hover {
   border-radius: 50%;
 }
 
+.hyperlink {
+  color: #c0bfbf;
+}
+
 footer {
   padding: 25px 0;
   text-align: center;
